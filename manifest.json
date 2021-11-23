@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "PrehrajtoWatch",
+  "version": "4.0.1",
+ 
+  
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.prehraj.to/*",
+        "*://*.prehrajto.cz/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "storage"
+  ]
+}
